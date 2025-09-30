@@ -12,7 +12,7 @@ import Properties from "@/components/homes/home-1/Properties";
 import Properties2 from "@/components/homes/home-1/Properties2";
 import Testimonials from "@/components/homes/home-1/Testimonials";
 import WhyChoose from "@/components/homes/home-1/WhyChoose";
-import Contact from "@/components/homes/home-1/contact";
+import Contact from "@/components/homes/home-1/Contact";
 import Banners from "@/components/homes/home-1/banners";
 
 export const metadata = {
