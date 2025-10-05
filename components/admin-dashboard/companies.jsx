@@ -1,11 +1,14 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import DropdownSelect from "../common/DropdownSelect";
-import { properties, properties5 } from "@/data/properties";
+import { properties } from "@/data/properties";
+import { owners } from "@/data/owners";
+import { companies } from "@/data/companies";
 
-export default function Property() {
+export default function Companies() {
   return (
     <div className="main-content w-100">
       <div className="main-content-inner wrap-dashboard-content">
@@ -14,21 +17,6 @@ export default function Property() {
         </div>
 
         <div className="row mt-5">
-          <div className="col-lg-3 col-md-3 col-12">
-            <form onSubmit={(e) => e.preventDefault()}>
-              <fieldset className="box-fieldset">
-                <label>
-                  Status{" "}
-                </label>
-
-                <DropdownSelect
-                  options={["Select", "Booked", "Not Booked", "Expired"]}
-                  addtionalParentClass=""
-                />
-              </fieldset>
-            </form>
-          </div>
-
           <div className="col-lg-5 col-md-6 col-12">
             <form onSubmit={(e) => e.preventDefault()}>
               <fieldset className="box-fieldset">
@@ -52,60 +40,36 @@ export default function Property() {
               </a>
             </div>
           </div>
-
-          <div className="col-lg-2 col-md-2 col-12">
-            <div className="box mt-5">
-              <a href="/owner-dashboard/add-property" className="tf-btn bg-color-primary pd-10">
-                Add Property
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="widget-box-2 wd-listing mt-20">
-          <h3 className="title">Listings</h3>
+          <h3 className="title">Companies</h3>
           <div className="wrap-table">
             <div className="table-responsive">
               <table>
                 <thead>
                   <tr>
-                    <th>Listing Details</th>
-                    <th>Listing Date</th>
-                    <th>Status</th>
+                    <th>Name</th>
+                    <th>Mobile No.</th>
+                    <th>Email</th>
+                    <th>Bookings</th>
                     <th>Action</th>
                   </tr>
                 </thead>
 
                 <tbody>
-                  {properties.map((property, i) => (
+                  {companies.map((company, i) => (
                     <tr key={i} className="file-delete">
                       <td>
                         <div className="listing-box">
-                          <div className="images">
-                            <Image
-                              alt="images"
-                              src={property.imageSrc}
-                              width={615}
-                              height={405}
-                            />
-                          </div>
-
                           <div className="content">
                             <div className="title">
                               <Link
-                                href={`/property-detail-v1/${property.id}`}
+                                href={""}
                                 className="link"
                               >
-                                {property.title}
+                                {company.name}
                               </Link>
-                            </div>
-
-                            <div className="text-date">
-                              {property.location}
-                            </div>
-
-                            <div className="text-btn text-color-primary">
-                               ₹{property.price.toLocaleString()}
                             </div>
                           </div>
                         </div>
@@ -113,15 +77,22 @@ export default function Property() {
 
                       <td>
                         <div className="text-date">
-                          {property.listingDate}
+                          {company.mobile}
                         </div>
                       </td>
                       
                       <td>
                         <div className="status-wrap">
+                            {" "}
+                            {company.email}
+                        </div>
+                      </td>
+
+                      <td>
+                        <div className="status-wrap">
                           <a href="#" className="btn-status">
                             {" "}
-                            {property.status}
+                            {company.listings}
                           </a>
                         </div>
                       </td>
@@ -129,7 +100,7 @@ export default function Property() {
                       <td>
                         <ul className="list-action">
                           <li>
-                            <a href="/owner-dashboard/edit-property" className="item">
+                            <a className="item">
                               <svg
                                 width={16}
                                 height={16}

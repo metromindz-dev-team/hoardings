@@ -1,4 +1,4 @@
-import Favorites from "@/components/owner-dashboard/Favorites";
+import Favorites from "@/components/company-dashboard/Favorites";
 import React from "react";
 
 export const metadata = {

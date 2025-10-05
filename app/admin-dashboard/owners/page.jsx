@@ -1,4 +1,4 @@
-import Property from "@/components/owner-dashboard/Property";
+import Owners from "@/components/admin-dashboard/owners";
 import React from "react";
 
 export const metadata = {
@@ -8,7 +8,7 @@ export const metadata = {
 export default function page() {
   return (
     <>
-      <Property />
+      <Owners />
     </>
   );
 }

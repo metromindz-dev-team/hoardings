@@ -16,12 +16,12 @@ export default function Profile() {
             <form onSubmit={(e) => e.preventDefault()}>
               <fieldset className="box box-fieldset">
                 <label htmlFor="name">
-                  Full Name<span>*</span>
+                  Company Name<span>*</span>
                 </label>
                 <input
                   type="text"
                   id="name"
-                  placeholder="Enter Your Full Name"
+                  placeholder="Enter Your Company Name"
                   className="form-control"
                 />
               </fieldset>
@@ -29,24 +29,24 @@ export default function Profile() {
               <fieldset className="grid-layout-2 gap-30 box-info-2">
                 <div className="box-fieldset">
                   <label htmlFor="phone">
-                    Mobile No.<span>*</span>
+                    Company Mobile No.<span>*</span>
                   </label>
                   <input
                     type="number"
                     id="phone"
-                    placeholder="Enter Your Mobile No."
+                    placeholder="Enter Your Company Mobile No."
                     className="form-control"
                   />
                 </div>
 
                 <div className="box-fieldset">
                   <label htmlFor="email">
-                    Email Address<span>*</span>
+                    Company Email Address<span>*</span>
                   </label>
                   <input
                     type="text"
                     id="email"
-                    placeholder="Enter Your Email Address"
+                    placeholder="Enter Your Company Email Address"
                     className="form-control"
                   />
                 </div>

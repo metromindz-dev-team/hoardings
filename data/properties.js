@@ -5,10 +5,12 @@ export const properties = [
     imageSrc: "/images/home/hoardings/hoarding1.webp",
     title: "Digital Hoardings",
     listingDate: "12-09-2025",
+    bookingDate: "20-09-2025",
     location: "MG Road, Bangalore",
     size: "2000 ft x 200 ft",
     price:  8600,
     status: "Booked",
+    status1: "Active",
     days: 5
   },
    {
@@ -16,10 +18,12 @@ export const properties = [
     imageSrc: "/images/home/hoardings/hoarding2.webp",
     title: "Indoor & Commercial Spaces",
     listingDate: "12-09-2025",
+    bookingDate: "20-09-2025",
     location: "MG Road, Bangalore",
     size: "800 ft x 1000 ft",
     price:  50000,
     status: "Not Booked",
+    status1: "Inactive",
     days: 2
   },
    {
@@ -27,10 +31,12 @@ export const properties = [
     imageSrc: "/images/home/hoardings/hoarding3.webp",
     title: "Roadside Hoardings",
     listingDate: "12-09-2025",
+    bookingDate: "20-09-2025",
     location: "MG Road, Bangalore",
     size: "200 ft x 150 ft",
     price:  2000,
     status: "Booked",
+    status1: "Active",
     days: 1
   },
    {
@@ -38,10 +44,12 @@ export const properties = [
     imageSrc: "/images/home/hoardings/hoarding4.webp",
     title: "Pole & Wall Banners",
     listingDate: "12-09-2025",
+    bookingDate: "20-09-2025",
     location: "MG Road, Bangalore",
     size: "200 ft x 100 ft",
     price:  30000,
     status: "Expired",
+    status1: "Inactive",
     days: 7
   },
   {
@@ -49,10 +57,12 @@ export const properties = [
     imageSrc: "/images/home/hoardings/hoarding5.webp",
     title: "Digital Hoardings",
     listingDate: "12-09-2025",
+    bookingDate: "20-09-2025",
     location: "MG Road, Bangalore",
     size: "120 ft x 80 ft",
     price:  25000,
     status: "Not Booked",
+    status1: "Active",
     days: 15
   },
   {
@@ -60,10 +70,12 @@ export const properties = [
     imageSrc: "/images/home/hoardings/hoarding6.webp",
     title: "Transit Advertising",
     listingDate: "12-09-2025",
+    bookingDate: "20-09-2025",
     location: "MG Road, Bangalore",
     size: "500 ft x 100 ft",
     price:  15000,
     status: "Booked",
+    status1: "Inactive",
     days: 20
   },
 ];

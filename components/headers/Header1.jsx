@@ -65,7 +65,7 @@ export default function Header1({ parentClass = "header" }) {
                   <div className="btn-add">
                     <Link
                       className="tf-btn style-border pd-23"
-                      href={`/`}
+                      href="#modalLogin" data-bs-toggle="modal"
                     >
                       Login/Register
                     </Link>

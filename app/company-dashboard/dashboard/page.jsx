@@ -1,5 +1,5 @@
 
-import Dashboard from "@/components/owner-dashboard/Dashboard";
+import Dashboard from "@/components/company-dashboard/Dashboard";
 import React from "react";
 
 export const metadata = {

@@ -1,4 +1,4 @@
-import SaveSearch from "@/components/owner-dashboard/SaveSearch";
+import SaveSearch from "@/components/company-dashboard/SaveSearch";
 import React from "react";
 
 export const metadata = {

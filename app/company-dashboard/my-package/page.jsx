@@ -1,4 +1,4 @@
-import Package from "@/components/owner-dashboard/Package";
+import Package from "@/components/company-dashboard/Package";
 import React from "react";
 
 export const metadata = {

@@ -1,4 +1,5 @@
-import AddProperty from "@/components/owner-dashboard/AddProperty";
+
+import AddProperty from "@/components/company-dashboard/AddProperty";
 import React from "react";
 
 export const metadata = {

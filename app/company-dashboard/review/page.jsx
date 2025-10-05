@@ -1,4 +1,4 @@
-import Review from "@/components/owner-dashboard/Review";
+import Review from "@/components/company-dashboard/Review";
 import React from "react";
 
 export const metadata = {
