@@ -1,0 +1,469 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
+      "internal": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/owner-dashboard/edit-property/[id]",
+      "regex": "^/owner\\-dashboard/edit\\-property/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/owner\\-dashboard/edit\\-property/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/enquiry-poster/[id]",
+      "regex": "^/owner\\-dashboard/enquiry\\-poster/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/owner\\-dashboard/enquiry\\-poster/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/property-detail-v2/[id]",
+      "regex": "^/property\\-detail\\-v2/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/property\\-detail\\-v2/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/404",
+      "regex": "^/404(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/404(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/add-property",
+      "regex": "^/admin\\-dashboard/add\\-property(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/add\\-property(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/companies",
+      "regex": "^/admin\\-dashboard/companies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/companies(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/dashboard",
+      "regex": "^/admin\\-dashboard/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/dashboard(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/my-favorites",
+      "regex": "^/admin\\-dashboard/my\\-favorites(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/my\\-favorites(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/my-package",
+      "regex": "^/admin\\-dashboard/my\\-package(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/my\\-package(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/my-profile",
+      "regex": "^/admin\\-dashboard/my\\-profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/my\\-profile(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/my-property",
+      "regex": "^/admin\\-dashboard/my\\-property(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/my\\-property(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/my-save-search",
+      "regex": "^/admin\\-dashboard/my\\-save\\-search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/my\\-save\\-search(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/owners",
+      "regex": "^/admin\\-dashboard/owners(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/owners(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/owners/approved",
+      "regex": "^/admin\\-dashboard/owners/approved(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/owners/approved(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/owners/pending",
+      "regex": "^/admin\\-dashboard/owners/pending(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/owners/pending(?:/)?$"
+    },
+    {
+      "page": "/admin-dashboard/review",
+      "regex": "^/admin\\-dashboard/review(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-dashboard/review(?:/)?$"
+    },
+    {
+      "page": "/admin-login",
+      "regex": "^/admin\\-login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin\\-login(?:/)?$"
+    },
+    {
+      "page": "/blog-list",
+      "regex": "^/blog\\-list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog\\-list(?:/)?$"
+    },
+    {
+      "page": "/career",
+      "regex": "^/career(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/career(?:/)?$"
+    },
+    {
+      "page": "/company-dashboard/dashboard",
+      "regex": "^/company\\-dashboard/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/company\\-dashboard/dashboard(?:/)?$"
+    },
+    {
+      "page": "/company-dashboard/my-favorites",
+      "regex": "^/company\\-dashboard/my\\-favorites(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/company\\-dashboard/my\\-favorites(?:/)?$"
+    },
+    {
+      "page": "/company-dashboard/my-package",
+      "regex": "^/company\\-dashboard/my\\-package(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/company\\-dashboard/my\\-package(?:/)?$"
+    },
+    {
+      "page": "/company-dashboard/my-profile",
+      "regex": "^/company\\-dashboard/my\\-profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/company\\-dashboard/my\\-profile(?:/)?$"
+    },
+    {
+      "page": "/company-dashboard/my-property",
+      "regex": "^/company\\-dashboard/my\\-property(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/company\\-dashboard/my\\-property(?:/)?$"
+    },
+    {
+      "page": "/company-dashboard/my-save-search",
+      "regex": "^/company\\-dashboard/my\\-save\\-search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/company\\-dashboard/my\\-save\\-search(?:/)?$"
+    },
+    {
+      "page": "/company-dashboard/review",
+      "regex": "^/company\\-dashboard/review(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/company\\-dashboard/review(?:/)?$"
+    },
+    {
+      "page": "/compare",
+      "regex": "^/compare(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/compare(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/enquiry-login",
+      "regex": "^/enquiry\\-login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/enquiry\\-login(?:/)?$"
+    },
+    {
+      "page": "/faq",
+      "regex": "^/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/faq(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/home-loan-process",
+      "regex": "^/home\\-loan\\-process(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home\\-loan\\-process(?:/)?$"
+    },
+    {
+      "page": "/home03",
+      "regex": "^/home03(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home03(?:/)?$"
+    },
+    {
+      "page": "/home04",
+      "regex": "^/home04(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home04(?:/)?$"
+    },
+    {
+      "page": "/home06",
+      "regex": "^/home06(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home06(?:/)?$"
+    },
+    {
+      "page": "/home07",
+      "regex": "^/home07(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home07(?:/)?$"
+    },
+    {
+      "page": "/home08",
+      "regex": "^/home08(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home08(?:/)?$"
+    },
+    {
+      "page": "/home09",
+      "regex": "^/home09(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home09(?:/)?$"
+    },
+    {
+      "page": "/home10",
+      "regex": "^/home10(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home10(?:/)?$"
+    },
+    {
+      "page": "/locations-grid",
+      "regex": "^/locations\\-grid(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/locations\\-grid(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/add-property",
+      "regex": "^/owner\\-dashboard/add\\-property(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner\\-dashboard/add\\-property(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/dashboard",
+      "regex": "^/owner\\-dashboard/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner\\-dashboard/dashboard(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/my-favorites",
+      "regex": "^/owner\\-dashboard/my\\-favorites(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner\\-dashboard/my\\-favorites(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/my-package",
+      "regex": "^/owner\\-dashboard/my\\-package(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner\\-dashboard/my\\-package(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/my-profile",
+      "regex": "^/owner\\-dashboard/my\\-profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner\\-dashboard/my\\-profile(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/my-property",
+      "regex": "^/owner\\-dashboard/my\\-property(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner\\-dashboard/my\\-property(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/my-save-search",
+      "regex": "^/owner\\-dashboard/my\\-save\\-search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner\\-dashboard/my\\-save\\-search(?:/)?$"
+    },
+    {
+      "page": "/owner-dashboard/review",
+      "regex": "^/owner\\-dashboard/review(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/owner\\-dashboard/review(?:/)?$"
+    },
+    {
+      "page": "/project-list",
+      "regex": "^/project\\-list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/project\\-list(?:/)?$"
+    },
+    {
+      "page": "/properties-grid",
+      "regex": "^/properties\\-grid(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/properties\\-grid(?:/)?$"
+    },
+    {
+      "page": "/property-filter-popup",
+      "regex": "^/property\\-filter\\-popup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-filter\\-popup(?:/)?$"
+    },
+    {
+      "page": "/property-filter-popup-left",
+      "regex": "^/property\\-filter\\-popup\\-left(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-filter\\-popup\\-left(?:/)?$"
+    },
+    {
+      "page": "/property-filter-popup-right",
+      "regex": "^/property\\-filter\\-popup\\-right(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-filter\\-popup\\-right(?:/)?$"
+    },
+    {
+      "page": "/property-gird-right-sidebar",
+      "regex": "^/property\\-gird\\-right\\-sidebar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-gird\\-right\\-sidebar(?:/)?$"
+    },
+    {
+      "page": "/property-gird-top-search",
+      "regex": "^/property\\-gird\\-top\\-search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-gird\\-top\\-search(?:/)?$"
+    },
+    {
+      "page": "/property-grid-full-width",
+      "regex": "^/property\\-grid\\-full\\-width(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-grid\\-full\\-width(?:/)?$"
+    },
+    {
+      "page": "/property-half-map-grid",
+      "regex": "^/property\\-half\\-map\\-grid(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-half\\-map\\-grid(?:/)?$"
+    },
+    {
+      "page": "/property-half-map-list",
+      "regex": "^/property\\-half\\-map\\-list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-half\\-map\\-list(?:/)?$"
+    },
+    {
+      "page": "/property-half-top-map",
+      "regex": "^/property\\-half\\-top\\-map(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-half\\-top\\-map(?:/)?$"
+    },
+    {
+      "page": "/property-list-full-width",
+      "regex": "^/property\\-list\\-full\\-width(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-list\\-full\\-width(?:/)?$"
+    },
+    {
+      "page": "/property-list-left-sidebar",
+      "regex": "^/property\\-list\\-left\\-sidebar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-list\\-left\\-sidebar(?:/)?$"
+    },
+    {
+      "page": "/property-list-right-sidebar",
+      "regex": "^/property\\-list\\-right\\-sidebar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-list\\-right\\-sidebar(?:/)?$"
+    },
+    {
+      "page": "/property-list-top-search",
+      "regex": "^/property\\-list\\-top\\-search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/property\\-list\\-top\\-search(?:/)?$"
+    },
+    {
+      "page": "/set-password",
+      "regex": "^/set\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/set\\-password(?:/)?$"
+    },
+    {
+      "page": "/signup",
+      "regex": "^/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/signup(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

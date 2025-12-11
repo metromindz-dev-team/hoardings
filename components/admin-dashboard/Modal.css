@@ -1,0 +1,60 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 420px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* View details modal */
+.details-grid p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.details-grid strong {
+  color: #333;
+}
+
+.modal-box {
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+
+/* Smooth transitions */
+.nav-menu-item {
+  transition: all 0.2s ease;
+}
+
+/* Arrow rotation */
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* Icon color for active state */
+.nav-menu-item.active svg path {
+  stroke: white;
+}
+
+/* Make the entire area clickable if you want */
+.nav-menu-link {
+  width: 100%;
+}
